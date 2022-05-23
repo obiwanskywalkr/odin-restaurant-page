@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:wght@100&display=swap');
+
+.color {
+    color: red;
+}
+
+:root {
+    --primary-light: rgba(249, 250, 251, 1);
+    --primary-dark: rgba(0,0,0, 0.75);
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1rem, calc(.5em + 0.5vw), 1.75rem);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(./images/satterfields.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    height: 10rem;
+    width: 100%;
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+}
+#header > div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#header > div > h1 {
+    cursor: default;
+    margin: 1rem 0;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 5rem;
+    align-self: flex-end;
+    grid-column: 1 / 4;
+}
+#header > div > h2 {
+    cursor: pointer;
+    justify-self: center;
+
+}
+#homeTab {
+    grid-row: 2 / 3;
+    grid-column: -4 / -3;
+}
+#menuTab {
+    grid-row: 2 / 3;
+    grid-column: -3 / -2;
+}
+#contactTab {
+    grid-row: -2 / -1;
+    grid-column: -2 / -1;
+}
+#main {
+    max-height: 35rem;
+    margin: 5rem 0;
+    border-radius: 1rem;
+    padding: 3rem 10rem;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    align-self: center;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#home > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    text-align: center;
+    white-space: pre;
+}
+#home > img {
+    width: 23rem;
+    height: 22rem;
+    border-radius: 50%;
+}
+#footer {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+#footer > p {
+    color: var(--primary-light);
+    font-weight: bold;
+}
