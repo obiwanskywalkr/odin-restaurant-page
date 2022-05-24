@@ -44,10 +44,13 @@ body {
     align-self: flex-end;
     grid-column: 1 / 4;
 }
-#header > div > h2 {
+.tab {
     cursor: pointer;
     justify-self: center;
 
+}
+.active {
+    border-bottom: 5px solid red;
 }
 #homeTab {
     grid-row: 2 / 3;
