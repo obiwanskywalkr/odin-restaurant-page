@@ -1,6 +1,4 @@
 import renderHome from './home.js';
-import renderMenu from './menu.js';
-import contact from './contact.js';
 import './style.css';
 
 function renderSite() {
@@ -25,43 +23,15 @@ function renderSite() {
         homeTab.classList.add('tab');
         homeTab.textContent = 'Home';
 
-        homeTab.addEventListener('click', (e) => {
-            if (e.target.classList.contains('active')) return;
-            setActiveTab(homeTab);
-            renderHome();
-        });
-
         const menuTab = document.createElement('h2');
         menuTab.setAttribute('id', 'menuTab');
         menuTab.classList.add('tab');
         menuTab.textContent = 'Menu';
 
-        menuTab.addEventListener('click', (e) => {
-            if (e.target.classList.contains('active')) return;
-            setActiveTab(menuTab);
-            renderMenu();
-        });
-
         const contactTab = document.createElement('h2');
         contactTab.setAttribute('id', 'contactTab');
         contactTab.classList.add('tab');
         contactTab.textContent = 'Contact'
-    
-        contactTab.addEventListener('click', (e) => {
-    
-        });
-
-        function setActiveTab(tab) {
-            const tabs = document.querySelectorAll('.tab');
-
-            tabs.forEach((tab) => {
-                if (tab != this) {
-                    tab.classList.remove('active');
-                }
-            });
-
-            tab.classList.add('active');
-        }
             
         content.appendChild(header);
         header.appendChild(headerContent);
@@ -97,6 +67,7 @@ function renderSite() {
 
     // Initialize by loading home tab
     renderHome();
+    homeTab.classList.add('active');
 }
 
 export default renderSite;

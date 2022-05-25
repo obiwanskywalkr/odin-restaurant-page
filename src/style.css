@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:wght@100&display=swap');
-
-.color {
-    color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:wght@300;700&display=swap');
 
 :root {
     --primary-light: rgba(249, 250, 251, 1);
@@ -15,7 +11,7 @@
     padding: 0;
 }
 body {
-    background-image: url(./images/satterfields.webp);
+    background-image: url(./images/satterfields.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -46,11 +42,14 @@ body {
 }
 .tab {
     cursor: pointer;
+    font-weight: 300;
     justify-self: center;
 
 }
 .active {
-    border-bottom: 5px solid red;
+    transform: scale(1.1);
+    font-weight: 700;
+    transition: 5ms;
 }
 #homeTab {
     grid-row: 2 / 3;
@@ -65,7 +64,8 @@ body {
     grid-column: -2 / -1;
 }
 #main {
-    max-height: 35rem;
+    max-height: 50rem;
+    max-width: 35rem;
     margin: 5rem 0;
     border-radius: 1rem;
     padding: 3rem 10rem;
@@ -80,7 +80,7 @@ body {
 }
 #home > p {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 300;
     line-height: 2.5rem;
     text-align: center;
     white-space: pre;
@@ -89,6 +89,10 @@ body {
     width: 23rem;
     height: 22rem;
     border-radius: 50%;
+}
+#menu > img {
+    width: 35rem;
+    height: 50rem;
 }
 #footer {
     width: 100%;
@@ -101,5 +105,5 @@ body {
 }
 #footer > p {
     color: var(--primary-light);
-    font-weight: bold;
+    font-weight: 300;
 }

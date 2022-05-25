@@ -1,25 +1,16 @@
-import chef from './images/chef.png';
+import currentMenu from './images/menu.png';
 
 function createMenu() {
-    const home = document.createElement('div');
-    const about = document.createElement('p');
-    const description = document.createElement('p');
+    const menu = document.createElement('div');
+    menu.setAttribute('id', 'menu');
+    
     const img = new Image();
+    img.src = currentMenu;
+    img.alt = "Menu";
     
-    home.setAttribute('id', 'home');
-    
-    about.textContent = 'Best and freshest ingredients. \r\n Friendly and knowledgable staff. \r\n Elegant ambience.';
-    
-    description.textContent = 'test';
-    
-    img.src = chef;
-    img.alt = "Becky Satterfield";
-    
-    home.appendChild(about);
-    home.appendChild(img);
-    home.appendChild(description);
+    menu.appendChild(img);
 
-    return home;
+    return menu;
 }
 
 function renderMenu() {
@@ -29,11 +20,3 @@ function renderMenu() {
 }
 
 export default renderMenu;
-
-
-// const createPElement = (text) => {
-//    let p = document.createElement('p');
-//    p.textContent = text;
-
-//    return { p };
-// }

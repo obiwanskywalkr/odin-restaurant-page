@@ -2,16 +2,15 @@ import chef from './images/chef.png';
 
 function createHome() {
     const home = document.createElement('div');
-    const about = document.createElement('p');
-    const description = document.createElement('p');
-    const img = new Image();
-    
     home.setAttribute('id', 'home');
-    
+
+    const about = document.createElement('p');
     about.textContent = 'Best and freshest ingredients. \r\n Friendly and knowledgable staff. \r\n Elegant ambience.';
-    
+
+    const description = document.createElement('p');
     description.textContent = 'Chef Becky Satterfield';
-    
+
+    const img = new Image();
     img.src = chef;
     img.alt = "Becky Satterfield";
     
@@ -29,11 +28,3 @@ function renderHome() {
 }
 
 export default renderHome;
-
-
-// const createPElement = (text) => {
-//    let p = document.createElement('p');
-//    p.textContent = text;
-
-//    return { p };
-// }
