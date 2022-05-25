@@ -1,4 +1,5 @@
 import currentMenu from './images/menu.png';
+import './style.css';
 
 function createMenu() {
     const menu = document.createElement('div');

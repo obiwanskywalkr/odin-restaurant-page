@@ -1,7 +1,7 @@
 import renderSite from './site.js';
 import renderHome from './home.js';
-import renderMenu from './menu.js'
-import renderContact from './contact.js'
+import renderMenu from './menu.js';
+import renderContact from './contact.js';
 
 renderSite();
 
