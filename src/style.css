@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:wght@300;700&display=swap');
-
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Cormorant Upright';
+    src: url('./CormorantUpright-Regular.ttf');
+}
 :root {
     --primary-light: rgba(249, 250, 251, 1);
     --primary-dark: rgba(0,0,0, 0.75);
