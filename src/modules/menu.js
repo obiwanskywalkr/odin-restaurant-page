@@ -1,5 +1,5 @@
-import currentMenu from './images/menu.png';
-import './style.css';
+import currentMenu from '/src/images/menu.png';
+import '/src/style.css';
 
 function createMenu() {
     const menu = document.createElement('div');

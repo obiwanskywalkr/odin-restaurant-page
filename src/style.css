@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('./Roboto-Light.ttf');
+    src: url('./fonts/Roboto-Light.ttf');
     font-weight: 300;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('./Roboto-Bold.ttf');
+    src: url('./fonts/Roboto-Bold.ttf');
     font-weight: 700;
 }
 @font-face {
     font-family: 'Cormorant Upright';
-    src: url('./CormorantUpright-Regular.ttf');
+    src: url('./fonts/CormorantUpright-Regular.ttf');
 }
 :root {
     --primary-light: rgba(249, 250, 251, 1);

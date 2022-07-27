@@ -1,5 +1,5 @@
-import chef from './images/chef.png';
-import './style.css';
+import chef from '/src/images/chef.png';
+import '/src/style.css';
 
 function createHome() {
     const home = document.createElement('div');

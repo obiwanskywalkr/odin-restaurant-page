@@ -1,7 +1,7 @@
-import renderSite from './site.js';
-import renderHome from './home.js';
-import renderMenu from './menu.js';
-import renderContact from './contact.js';
+import renderSite from './modules/site.js';
+import renderHome from './modules/home.js';
+import renderMenu from './modules/menu.js';
+import renderContact from './modules/contact.js';
 
 renderSite();
 

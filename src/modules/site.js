@@ -1,5 +1,5 @@
-import renderHome from './home.js';
-import './style.css';
+import renderHome from '/src/modules/home.js';
+import '/src/style.css';
 
 function renderSite() {
     // All elements get appended to content element

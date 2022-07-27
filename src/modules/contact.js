@@ -1,12 +1,11 @@
-import './style.css';
+import '/src/style.css';
 
 function createContact() {
     const contact = document.createElement('div');
     contact.setAttribute('id', 'contact');
 
     const form = document.createElement('form');
-    form.setAttribute('method', 'post');
-
+ 
     const legend = document.createElement('legend');
     legend.textContent = "Questions or comments?";
 
