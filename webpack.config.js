@@ -8,7 +8,7 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        static: './dist',
+        static: './',
         client: {
             logging: 'error',
         }
@@ -22,8 +22,8 @@ module.exports = {
     ],
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist'),
-        clean: true,
+        path: path.resolve(__dirname, './'),
+        clean: false,
     },
     optimization: {
         runtimeChunk: 'single',
